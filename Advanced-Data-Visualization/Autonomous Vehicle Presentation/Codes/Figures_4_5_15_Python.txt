@@ -1,0 +1,122 @@
+Python Codes for Figures 4, 5, 15
+
+Figure 4 Codes:
+***********************************************************************
+# Importation of useful packages
+import numpy as np
+import pandas as pd
+from os import path
+from PIL import Image
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
+import matplotlib.pyplot as plt
+
+
+# In[44]:
+
+
+# Import raw data set for the word cloud
+df = pd.read_csv("review.csv",sep=",", encoding="ISO-8859-1", header=0)
+df.head()
+
+
+# Create a word cloud based on consumer sentiment towards autonomous vehicles
+
+d = {}
+for a, x in df.values:
+    d[a] = x
+
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+
+wordcloud = WordCloud(background_color="white")
+wordcloud.generate_from_frequencies(frequencies=d)
+plt.figure(figsize=[20,10])
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
+plt.show()
+
+
+Figure 5 Codes:
+***********************************************************************
+import squarify
+
+
+# Import essential packages
+
+
+import datetime as dt
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+# Import raw data set for the treemap
+raw = pd.read_csv("generation.csv",sep=",", encoding="ISO-8859-1", header=0)
+raw.head()
+
+
+# Make a treemap based on consumer demand for autonomous vehicle purchase across generations
+
+
+import matplotlib
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({'percentage':[34,33,20,13,10, 4], 'group':["Older Gen Z", "Young Gen Z", "Older Millennials", "Young Millennials", "Gen X", "Baby Boomers"] })
+
+color_list = ["#1FA049", "#FDC373", "#81B7E3", "#AFD691", "#DD9CBF", "#254B88"]
+ 
+plt.figure(figsize=(14,10))
+plt.xlabel("Age Group Proportion to Total Respondents")
+plt.ylabel("Age Group Proportion to Total Respondents")
+plt.title('U.S. Consumer Demand for Autonomous Vehicles by Age Group')
+squarify.plot(sizes=df['percentage'], label=df['group'],color=color_list, alpha=.8 )
+
+plt.show()
+
+
+Figure 15 Codes:
+***********************************************************************
+# import all essential packages
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans, AffinityPropagation
+import warnings
+warnings.filterwarnings("ignore")
+
+
+# Import the raw data set for the radar chart
+
+
+df = pd.read_csv("country.csv")
+df.head()
+
+
+# Make a radar chart of global skepticism over AV safety:
+
+
+import plotly.express as px
+import pandas as pd
+df = pd.DataFrame(dict(
+    r=[0.50, 0.26, 0.57, 0.47, 0.48, 0.48, 0.25, 0.44, 0.36, 0.22],
+    theta=['USA','China','Japan','Germany','India', 'UK','Brazil','Canada', 'Russia', 'Mexico']))
+fig = px.line_polar(df, r='r', theta='theta', line_close=True)
+fig.update_layout(
+  polar=dict(
+    radialaxis=dict(
+      visible=True,
+      range=[0, 0.6]
+    ),
+  ),
+  showlegend=False
+)
+fig.show()

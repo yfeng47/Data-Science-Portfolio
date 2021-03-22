@@ -1,0 +1,116 @@
+#Figure 13 
+#Source: Bonnefon, J., Shariff, A., & Rahwan, I. (2016). The social dilemma of autonomous vehicles. Science (New York, N.Y.), 352(6293), 1573-1576.
+
+library(RColorBrewer)
+display.brewer.all()
+
+# 1. Visualize a single RColorBrewer palette 
+# by specifying its name
+display.brewer.pal(8, "Paired")
+
+# 2. Return the hexadecimal color code of the palette
+brewer.pal(8, "Paired")
+
+
+#Blue of Choice: "#1F78B4"
+
+library(ggplot2)
+library(dplyr)
+library(extrafont)
+
+loadfonts(device = "win")
+windowsFonts()
+
+mydata <- read.csv(file = "Dilemma.csv", header=TRUE, sep=",")
+summary(mydata)
+class(mydata)
+
+
+#initiate loading of graphic on pc in jpeg form with certain size specs
+jpeg("Dilemma.jpeg")
+
+
+Dilemma <- ggplot(mydata, aes(fill= Scenario, y= Agreed, x=Type)) + 
+              geom_bar(position="dodge", stat="identity") + 
+              scale_fill_manual(values=c("#E31A1C", "#A6CEE3", "#33A02C")) +
+              theme_classic() + 
+              theme(panel.grid.major.y = element_line(colour = "lightgray")) +
+              theme(panel.grid.major.y = element_line(colour = "lightgray")) +
+              theme(panel.grid.major.x = element_line(colour = "lightgray")) + 
+              scale_y_continuous(expand = c(0, 0), limits = c(0, 1)) +
+              theme(text = element_text(family = "serif")) +
+              labs(title = "Moral Dilemma in AV Programming") +
+              xlab("Type") + 
+              ylab("Percentage Agreed") 
+Dilemma  
+
+
+#Saving the image to the computer with size parameters
+ggsave("Dilemma.jpg", plot = Dilemma, height = 8, width = 11, units = "in", dpi = "print")
+
+#Saving the image to the computer  
+ggsave(filename = "Dilemma",
+       device = "jpeg",
+       plot = last_plot())
+
+#Closing the jpeg 'device' to commit the image save.
+dev.off()    
+
+
+
+#Figure 16
+#Source: Bonnefon, J., Shariff, A., & Rahwan, I. (2016). The social dilemma of autonomous vehicles. Science (New York, N.Y.), 352(6293), 1573-1576.
+
+library(RColorBrewer)
+display.brewer.all()
+
+# 1. Visualize a single RColorBrewer palette 
+# by specifying its name
+display.brewer.pal(8, "Paired")
+
+# 2. Return the hexadecimal color code of the palette
+brewer.pal(8, "Paired")
+
+
+#Blue of Choice: "#1F78B4"
+
+library(ggplot2)
+library(dplyr)
+library(extrafont)
+
+loadfonts(device = "win")
+windowsFonts()
+
+mydata <- read.csv(file = "concern_updated.csv", header=TRUE, sep=",")
+summary(mydata)
+class(mydata)
+
+
+#initiate loading of graphic on pc in jpeg form with certain size specs
+jpeg("Concern.jpeg")
+
+
+Concern <- ggplot(mydata, aes(fill= Percentages, y= Percentages, x=Concerns)) + 
+  geom_bar(stat="identity", color = "#1F78B4", fill = "#1F78B4") + 
+  theme_classic() + 
+  theme(panel.grid.major.y = element_line(colour = "lightgray")) +
+  theme(panel.grid.major.y = element_line(colour = "lightgray")) +
+  theme(text = element_text(family = "serif")) +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab("Concern") + 
+  ylab("Percentage Who Held Concern") 
+Concern  
+
+
+#Saving the image to the computer with size parameters
+ggsave("Concern.jpg", plot = Concern, height = 8, width = 11, units = "in", dpi = "print")
+
+#Saving the image to the computer  
+ggsave(filename = "Concern",
+       device = "jpeg",
+       plot = last_plot())
+
+#Closing the jpeg 'device' to commit the image save.
+dev.off()    
+
+
