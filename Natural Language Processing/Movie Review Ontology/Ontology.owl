@@ -1,0 +1,1403 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#"
+     xml:base="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#happensinPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#happensinPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasReviewby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasReviewby"/>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasRoleas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasRoleas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasReleaseYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasReleaseYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Cast_Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Cast_Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#NewsStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#NewsStation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#MovieThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Visual_Effects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Visual_Effects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#A.O.Scott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#A.O.Scott">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Author"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#film_critic"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Abraham_Lincoln -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Abraham_Lincoln">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#American_president"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Adventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alan_Turing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alan_Turing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_scientist"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#cryptanalyst"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alejandro_González_Iñárritu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alejandro_González_Iñárritu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#American_president -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#American_president">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Antonio_Joseph_Mendez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Antonio_Joseph_Mendez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tony_Mendez"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#CIA_agent"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Argo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Argo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Iran"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tehran"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Ben_Affleck"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bryan_Cranston"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Antonio_Joseph_Mendez"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tony_Mendez"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Jack_O&apos;Donnel"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Heroic"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Schemes_and_Ruses"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Spy"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Ben_Affleck"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Political"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Thriller"/>
+        <hasReviewby rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Manohla_Dargis"/>
+        <hasReviewby rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#New_York_Times"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Belgium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Belgium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Ben_Affleck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Ben_Affleck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Antonio_Joseph_Mendez"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Benedict_Cumberbatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Benedict_Cumberbatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alan_Turing"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Julian_Assange"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bill_Condon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bill_Condon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bletchley_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bletchley_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Brussels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Brussels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bryan_Cranston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bryan_Cranston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Jack_O&apos;Donnel"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#CIA_agent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#CIA_agent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Crime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dakotas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dakotas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Brühl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Brühl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Domscheit-Berg"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Day-Lewis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Day-Lewis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Abraham_Lincoln"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Domscheit-Berg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Domscheit-Berg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#activist"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#journalist"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Discrimination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Discrimination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Documentary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Documentary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dorothy_Vaughan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dorothy_Vaughan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_engineer"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Edward_Snowden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Edward_Snowden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#CIA_agent"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#whistleblower"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Fantasy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Fantasy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Geneva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Geneva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Heroic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Heroic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hidden_Figures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hidden_Figures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Cape_Canaveral,_FL"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Janelle_Monae"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Octavia_L._Spencer"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Taraji_P._Henson"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dorothy_Vaughan"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Katherine_Goble_Johnson"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Mary_Jackson"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dorothy_Vaughan"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Katherine_Goble_Johnson"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Mary_Jackson"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Discrimination"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leadership"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Perseverance"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Racism"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Scientific_Progress"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Social_and_Political_Progress"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Theodore_Melfi"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Comedy"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History"/>
+        <hasReviewby rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#A.O.Scott"/>
+        <hasReviewby rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#New_York_Times"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hong_Kong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hong_Kong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hugh_Glass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hugh_Glass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#explorer"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#frontiersman"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#fur_trader"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hunter"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Iran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Iran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Janelle_Monae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Janelle_Monae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Mary_Jackson"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joan_Clarke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joan_Clarke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#cryptanalyst"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#numismatist"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joseph_Gordon-Levitt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joseph_Gordon-Levitt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Edward_Snowden"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Julian_Assange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Julian_Assange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#activist"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_hacker"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#editor"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Justice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Justice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Katherine_Goble_Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Katherine_Goble_Johnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Keira_Knightley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Keira_Knightley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joan_Clarke"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leadership -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leadership">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leonardo_DiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leonardo_DiCaprio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hugh_Glass"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Lincoln -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Lincoln">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Washington_D.C."/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Petersburg,_VA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Day-Lewis"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Abraham_Lincoln"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Abraham_Lincoln"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Justice"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leadership"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Social_and_Political_Progress"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Steven_Spielberg"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Political"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#War"/>
+        <hasReviewby rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#A.O.Scott"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Manohla_Dargis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Manohla_Dargis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Author"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#film_critic"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Mary_Jackson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Mary_Jackson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#BiographicalReference"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#aerospace_engineer"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Morten_Tyldum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Morten_Tyldum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#New_York_Times -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#New_York_Times">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#NewsStation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Octavia_L._Spencer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Octavia_L._Spencer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dorothy_Vaughan"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Oliver_Stone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Oliver_Stone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Perseverance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Perseverance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Political -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Political">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Racism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Racism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Revenge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Revenge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Romance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Romance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Schemes_and_Ruses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Schemes_and_Ruses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Science_Fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Science_Fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Scientific_Progress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Scientific_Progress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Snowden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Snowden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#China"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Geneva"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hong_Kong"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Japan"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Switzerland"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joseph_Gordon-Levitt"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Edward_Snowden"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Edward_Snowden"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Heroic"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Schemes_and_Ruses"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#whistleblower"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Oliver_Stone"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Political"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Social_and_Political_Progress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Social_and_Political_Progress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Spy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Spy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Steven_Spielberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Steven_Spielberg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Survival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Survival">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Switzerland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Switzerland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Taraji_P._Henson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Taraji_P._Henson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Actor"/>
+        <hasRoleas rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Katherine_Goble_Johnson"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tehran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tehran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Fifth_Estate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Fifth_Estate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Belgium"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Berlin"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Brussels"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Germany"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Benedict_Cumberbatch"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Brühl"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Domscheit-Berg"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Julian_Assange"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Daniel_Domscheit-Berg"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Julian_Assange"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Justice"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Schemes_and_Ruses"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#whistleblower"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bill_Condon"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Thriller"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Imitation_Game -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Imitation_Game">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Bletchley_Park"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_Kingdom"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Benedict_Cumberbatch"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Keira_Knightley"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alan_Turing"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alan_Turing"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Joan_Clarke"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Heroic"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Scientific_Progress"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Social_and_Political_Progress"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#War"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Morten_Tyldum"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#History"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Thriller"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Revenant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#The_Revenant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Dakotas"/>
+        <happensinPlace rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Leonardo_DiCaprio"/>
+        <hasBiographicalReference rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hugh_Glass"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Hugh_Glass"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Perseverance"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Revenge"/>
+        <hasConcept rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Survival"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Alejandro_González_Iñárritu"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Action"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Adventure"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Western"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</hasReleaseYear>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasActor"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasBiographicalReference"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasConcept"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasDirector"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hasGenre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Theodore_Melfi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Theodore_Melfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Director"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Thriller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tony_Mendez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Tony_Mendez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_Kingdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_Kingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#United_States">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#War -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#War">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Washington_D.C. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Washington_D.C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Western -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Western">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#activist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#activist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#aerospace_engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#aerospace_engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_hacker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_hacker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_scientist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#computer_scientist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#cryptanalyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#cryptanalyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#editor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#editor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#explorer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#explorer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#film_critic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#film_critic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#frontiersman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#frontiersman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#fur_trader -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#fur_trader">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hunter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#hunter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#journalist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#journalist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#mathematician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#numismatist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#numismatist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#whistleblower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#whistleblower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Cape_Canaveral,_FL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Cape_Canaveral,_FL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Jack_O&apos;Donnel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Jack_O&apos;Donnel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Character"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Petersburg,_VA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Petersburg,_VA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Movie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/isabe/ontologies/2021/1/MSDS453-ontology#Review"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
