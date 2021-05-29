@@ -1,0 +1,10 @@
+0 Talking left
+1 Texting left
+2 Drinking
+3 Reaching behind
+4 Texting right
+5 Operate radio
+6 Talking right
+7 Talking passenger
+8 Hair makeup
+9 Safe driving
